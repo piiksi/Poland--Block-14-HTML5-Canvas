@@ -68,9 +68,7 @@ function handleFileSelect(evt) {
 
 window.topLineText = "";
 window.bottomLineText = "";
-var input1 = document.getElementById('topLineText');
-var input2 = document.getElementById('bottomLineText');
-input1.oninput = textChangeListener;
-input2.oninput = textChangeListener;
+var input = document.getElementById('inputLineText');
+input.oninput = textChangeListener;
 document.getElementById('file').addEventListener('change', handleFileSelect, false);
 document.querySelector('button').addEventListener('click', saveFile, false);
